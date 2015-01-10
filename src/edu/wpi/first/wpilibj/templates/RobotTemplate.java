@@ -8,10 +8,10 @@ import edu.wpi.first.wpilibj.Victor;
 import edu.wpi.first.wpilibj.DoubleSolenoid;
 
 public class RobotTemplate extends SimpleRobot {
-    RobotDrive chassis = new RobotDrive(1, 2);
+    RobotDrive chassis = new RobotDrive(0, 1);
     Joystick mainStick = new Joystick(1);
-    Victor compressor = new Victor(3);
-    Victor valve = new Victor(4);
+    Victor compressor = new Victor(2);
+    Victor valve = new Victor(3);
     DoubleSolenoid tank = new DoubleSolenoid(1, 8);
     
     public void autonomous() {
